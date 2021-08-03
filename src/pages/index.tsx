@@ -1,7 +1,7 @@
 import React from 'react';
 
 const IndexPage = () => {
-  return <main>My portfolio</main>;
+  return <main>Test</main>;
 };
 
 export default IndexPage;
