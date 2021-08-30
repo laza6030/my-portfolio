@@ -3,5 +3,13 @@ module.exports = {
     siteUrl: 'https://www.yourdomain.tld',
     title: 'my-portfolio'
   },
-  plugins: []
+  plugins: [
+    {
+      resolve: "@chakra-ui/gatsby-plugin",
+      options: {
+        resetCSS: true,
+        isUsingColorMode: true
+      }
+    }
+  ]
 };
