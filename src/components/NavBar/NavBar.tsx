@@ -2,12 +2,18 @@ import React from "react";
 
 import Logo from "../Logo";
 
-// TO DO: autocomplete style
-import {} from "./styles.module.css";
+import styled from "styled-components";
+
+export const Title = styled.h1`
+  font-size: 1.5 em;
+  text-align: center;
+  color: patevioletred;
+`;
 
 const NavBar = () => {
   return (
     <div>
+      <Title>Laza Nantenaina</Title>
       <Logo />
 
       <ul>
