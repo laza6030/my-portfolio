@@ -1,7 +1,7 @@
-import React from 'react';
+import React from "react";
 
 const Logo = () => {
-    return <>This is my log component</>;
-}
+  return <>Laza Nantenaina</>;
+};
 
 export default Logo;

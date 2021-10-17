@@ -1,16 +1,17 @@
 import React from "react";
 
-import Logo from "../components/Logo";
-
-import SeeMore from "../components/SeeMore";
+import Layout from "../components/Layout";
+import Career from "../components/Career";
+import About from "../components/About";
+import Contact from "../components/Contact";
 
 const Home = () => {
   return (
-    <>
-      <Logo />
-
-      <SeeMore />
-    </>
+    <Layout>
+      <About />
+      <Career />
+      <Contact />
+    </Layout>
   );
 };
 
