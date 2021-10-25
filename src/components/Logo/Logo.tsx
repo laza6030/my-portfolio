@@ -1,7 +1,7 @@
 import React from "react";
 
 const Logo = () => {
-  return <>Laza Nantenaina</>;
+  return <>Logo MyNameInHere</>;
 };
 
 export default Logo;

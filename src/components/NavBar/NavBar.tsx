@@ -1,21 +1,48 @@
 import React from "react";
+import { Link } from "gatsby";
 
 import Logo from "../Logo";
 
-// TO DO: autocomplete style
-import {} from "./styles.module.css";
+import styled from "styled-components";
+
+const Div = styled.div`
+  color: white;
+  background: #363535;
+  display: flex;
+  align-items: center;
+`;
+
+const Ul = styled.ul`
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  list-style-type: none;
+`;
+
+const Li = styled.li``;
+
+const StyledLink = styled(Link)`
+  color: white;
+  text-decoration: none;
+`;
 
 const NavBar = () => {
   return (
-    <div>
+    <Div>
       <Logo />
 
-      <ul>
-        <li>About Me</li>
-        <li>My Career</li>
-        <li>Contact</li>
-      </ul>
-    </div>
+      <Ul>
+        <Li>
+          <StyledLink {...{ to: "#" }}>About Me</StyledLink>
+        </Li>
+        <Li>
+          <StyledLink {...{ to: "#" }}>My Career</StyledLink>
+        </Li>
+        <Li>
+          <StyledLink {...{ to: "#" }}>Contact</StyledLink>
+        </Li>
+      </Ul>
+    </Div>
   );
 };
 
