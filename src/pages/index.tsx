@@ -5,13 +5,19 @@ import Career from "../components/Career";
 import About from "../components/About";
 import Contact from "../components/Contact";
 
+import styled from "styled-components";
+
+const StyledLayout = styled(Layout)`
+  background: #241c1a;
+`;
+
 const Home = () => {
   return (
-    <Layout>
+    <StyledLayout>
       <About />
       <Career />
       <Contact />
-    </Layout>
+    </StyledLayout>
   );
 };
 
