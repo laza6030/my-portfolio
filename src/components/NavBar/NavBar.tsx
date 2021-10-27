@@ -21,8 +21,12 @@ const Ul = styled.ul`
 const Li = styled.li``;
 
 const StyledLink = styled(Link)`
-  color: white;
+  color: #c6dbf5;
   text-decoration: none;
+  padding-bottom: 5px;
+  &:hover {
+    border-bottom: 1px solid #c6dbf5;
+  }
 `;
 
 const NavBar = () => {
@@ -32,13 +36,13 @@ const NavBar = () => {
 
       <Ul>
         <Li>
-          <StyledLink {...{ to: "#" }}>About Me</StyledLink>
+          <StyledLink {...{ to: "#about-me" }}>About Me</StyledLink>
         </Li>
         <Li>
-          <StyledLink {...{ to: "#" }}>My Career</StyledLink>
+          <StyledLink {...{ to: "#my-career" }}>My Career</StyledLink>
         </Li>
         <Li>
-          <StyledLink {...{ to: "#" }}>Contact Me</StyledLink>
+          <StyledLink {...{ to: "#contact-me" }}>Contact Me</StyledLink>
         </Li>
       </Ul>
     </Div>
