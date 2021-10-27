@@ -4,11 +4,12 @@ import Layout from "../components/Layout";
 import Career from "../components/Career";
 import About from "../components/About";
 import Contact from "../components/Contact";
+import Brand from "../components/Brand";
 
 import styled from "styled-components";
 
 const StyledLayout = styled(Layout)`
-  background: #241c1a;
+  // background: "red";
 `;
 
 const Home = () => {
@@ -17,6 +18,7 @@ const Home = () => {
       <About />
       <Career />
       <Contact />
+      <Brand />
     </StyledLayout>
   );
 };

@@ -1,18 +1,11 @@
 import React from "react";
 
 import NavBar from "../NavBar";
-
-import styled from "styled-components";
+import Footer from "../Footer";
 
 interface IProps {
   children: React.ReactNode;
 }
-
-// const StyledDiv = styled.div`
-//   background: #302f2f;
-//   color: blue;
-//   margin: 0px;
-// `;
 
 const Layout = (props: IProps) => {
   const { children } = props;
@@ -20,6 +13,7 @@ const Layout = (props: IProps) => {
     <div>
       <NavBar />
       {children}
+      <Footer />
     </div>
   );
 };
