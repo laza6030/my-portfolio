@@ -7,7 +7,6 @@ import styled from "styled-components";
 
 const Div = styled.div`
   color: white;
-  background: #363535;
   display: flex;
   align-items: center;
 `;
@@ -39,7 +38,7 @@ const NavBar = () => {
           <StyledLink {...{ to: "#" }}>My Career</StyledLink>
         </Li>
         <Li>
-          <StyledLink {...{ to: "#" }}>Contact</StyledLink>
+          <StyledLink {...{ to: "#" }}>Contact Me</StyledLink>
         </Li>
       </Ul>
     </Div>

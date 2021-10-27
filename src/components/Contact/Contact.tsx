@@ -1,7 +1,7 @@
 import React from "react";
 
 const Contact = () => {
-  return <div>This is the contact component</div>;
+  return <div>Don't hesitate to contact me at test@gmail.com</div>;
 };
 
 export default Contact;
