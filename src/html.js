@@ -16,7 +16,7 @@ export default function HTML(props) {
       <body
         style={{
           margin: 0,
-          background: "linear-gradient(0.25turn, #292828, #32395c)",
+          background: "linear-gradient(0.25turn, #32395c, #292828)",
         }}
         {...props.bodyAttributes}
       >
