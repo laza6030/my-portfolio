@@ -21,6 +21,7 @@
     "contentful": "^8.4.2",
     "framer-motion": "^4.1.17",
     "gatsby": "^3.9.1",
+    "gatsby-plugin-google-fonts": "^1.0.1",
     "gatsby-plugin-image": "^2.0.0",
     "gatsby-plugin-sharp": "^4.0.1",
     "gatsby-plugin-styled-components": "^4.14.0",
