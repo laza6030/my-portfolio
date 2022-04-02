@@ -27,6 +27,9 @@ export const StyledLink = styled(Link)`
     display: block;
     content: "";
     border-bottom: 1px solid ${({ theme }) => theme.text.main};
+    width: 115%;
+    position: relative;
+    left: -6px;
     transform: scaleX(0);
     transition: transform 260ms ease-in-out;
   }
