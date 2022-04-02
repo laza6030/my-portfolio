@@ -2,8 +2,7 @@ import styled from "styled-components";
 
 export const StyledLogo = styled.div`
   font-family: Ubuntu;
-  margin-right: auto;
-  margin-left: 60px;
+  margin: 0 auto 0 15px;
   color: ${({ theme }) => theme.text.main};
   border: 1px solid ${({ theme }) => theme.text.main};
   padding: 5px 20px;

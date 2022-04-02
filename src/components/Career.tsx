@@ -2,10 +2,11 @@ import React from "react";
 
 import Paragraph from "./styled/Paragraph.styled";
 import SubTitle from "./styled/SubTitle.styled";
+import Wrapper from "./styled/Wrapper.styled";
 
 const Career = () => {
   return (
-    <div id="my-career">
+    <Wrapper id="my-career">
       <SubTitle>My IT career</SubTitle>
 
       <Paragraph>
@@ -16,7 +17,7 @@ const Career = () => {
         debitis eligendi illo assumenda cum minus suscipit modi rerum ut, neque
         quia corporis?
       </Paragraph>
-    </div>
+    </Wrapper>
   );
 };
 

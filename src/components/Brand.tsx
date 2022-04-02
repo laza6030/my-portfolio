@@ -1,7 +1,9 @@
 import React from "react";
 
+import { StyledBrand } from "./styled/Brand.styled";
+
 const Brand = () => {
-  return <>Production: Rakoto M'dev</>;
+  return <StyledBrand>Production: Laza Nantenaina</StyledBrand>;
 };
 
 export default Brand;

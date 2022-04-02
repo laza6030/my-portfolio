@@ -8,18 +8,24 @@ import AboutMe from "../components/AboutMe";
 import Contact from "../components/Contact";
 import Brand from "../components/Brand";
 import Skills from "../components/Skills";
+import Footer from "../components/Footer";
+
+import MainWrapper from "../components/styled/MainWrapper.styled";
 
 import theme from "../theme";
 
 const Home = () => {
   return (
     <ThemeProvider theme={theme}>
-      <NavBar />
-      <AboutMe />
-      <Career />
-      <Skills />
-      <Contact />
-      <Brand />
+      <MainWrapper>
+        <NavBar />
+        <AboutMe />
+        <Career />
+        <Skills />
+        <Contact />
+        <Brand />
+        <Footer />
+      </MainWrapper>
     </ThemeProvider>
   );
 };
