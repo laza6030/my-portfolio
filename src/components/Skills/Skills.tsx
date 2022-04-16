@@ -1,7 +1,7 @@
 import React from "react";
 
-import SubTitle from "./styled/SubTitle.styled";
-import Paragraph from "./styled/Paragraph.styled";
+import SubTitle from "../styled/SubTitle.styled";
+import Paragraph from "../styled/Paragraph.styled";
 
 const Skills = () => {
   return (
