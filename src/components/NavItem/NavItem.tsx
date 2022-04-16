@@ -1,6 +1,6 @@
 import React from "react";
 
-import { StyledNavItem, StyledLink } from "./styled/NavBar.styled";
+import { StyledNavItem, StyledLink } from "../styled/NavBar.styled";
 
 interface IProps {
   name: string;

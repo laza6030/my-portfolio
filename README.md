@@ -1,4 +1,4 @@
-This is my personnal portfolio
+This is my personal portfolio
 
 #About me
 Developer: Laza Nantenaina

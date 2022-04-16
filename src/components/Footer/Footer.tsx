@@ -1,6 +1,6 @@
 import React from "react";
 
-import Paragraph from "./styled/Paragraph.styled";
+import Paragraph from "../styled/Paragraph.styled";
 
 import styled from "styled-components";
 
