@@ -2,13 +2,13 @@ import React from "react";
 
 import { ThemeProvider } from "styled-components";
 
-import NavBar from "../components/NavBar/NavBar";
+import NavBar from "../components/NavBar";
 import Career from "../components/Career";
-import AboutMe from "../components/AboutMe/AboutMe";
-import Contact from "../components/Contact/Contact";
-import Brand from "../components/Brand/Brand";
+import AboutMe from "../components/AboutMe";
+import Contact from "../components/Contact";
+import Brand from "../components/Brand";
 import Skills from "../components/Skills";
-import Footer from "../components/Footer/Footer";
+import Footer from "../components/Footer";
 
 import MainWrapper from "../components/styled/MainWrapper.styled";
 

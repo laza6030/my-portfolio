@@ -1,25 +1,30 @@
 import React from "react";
-import { useIntl } from "gatsby-plugin-intl";
+import { FormattedMessage } from "gatsby-plugin-intl";
 
-import Paragraph from "../styled/Paragraph.styled";
 import SubTitle from "../styled/SubTitle.styled";
 import Wrapper from "../styled/Wrapper.styled";
+import { PersonSupport } from "@styled-icons/fluentui-system-filled/PersonSupport";
+import { Code } from "@styled-icons/fluentui-system-regular/Code";
+
+import { ContentWrapper, CarrerItem } from "./Career.styled";
 
 const Career = () => {
-  const intl = useIntl();
-
   return (
     <Wrapper id="my-career">
-      <SubTitle>{intl.formatMessage({ id: "my.it.carrer" })}</SubTitle>
+      <SubTitle>
+        <FormattedMessage id="my.it.carrer" />
+      </SubTitle>
+      <ContentWrapper>
+        <CarrerItem>
+          <PersonSupport />
+          <FormattedMessage id="my.it.carrer.support.description" />
+        </CarrerItem>
 
-      <Paragraph>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, officia
-        fugit! Eligendi enim fugit aperiam deserunt, quas animi, maiores illo
-        rerum a nemo corporis impedit vitae, perferendis in repellat quia
-        expedita quisquam? Accusamus consequuntur, provident maxime tempora
-        debitis eligendi illo assumenda cum minus suscipit modi rerum ut, neque
-        quia corporis?
-      </Paragraph>
+        <CarrerItem>
+          <Code />
+          <FormattedMessage id="my.it.carrer.developer.description" />
+        </CarrerItem>
+      </ContentWrapper>
     </Wrapper>
   );
 };
