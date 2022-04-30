@@ -1,5 +1,7 @@
 import styled from "styled-components";
 
 export const Flex = styled.div`
-  // display: flex;
+  display: flex;
+  // flex-direction: column;
+  // align-items: center;
 `;

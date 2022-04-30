@@ -5,7 +5,10 @@
     "contact.me":"Contact Me",
     "me.hello.world": "Hello World, ",
     "me.presentation":"My name is <bold>Laza Nantenaina</bold>_",
-    "me.presentation.description":"I am passionate about computers and new technologies. I love building cool stuff that's why I became a software engineer.",
+    "me.presentation.description":"I'm a Software Engineer and I love creating cool stuff",
     "my.it.carrer":"My IT career",
-    "my.it.carrer.description":"I've been working as an IT Support for 7 months and then"
+    "my.it.carrer.support.title":"IT Support",
+    "my.it.carrer.support.description":"I've been working as an IT Support for a while",
+    "my.it.carrer.developer.title":"Developer",
+    "my.it.carrer.developer.description":"Today, I'm a Software Engineer :D"
 }

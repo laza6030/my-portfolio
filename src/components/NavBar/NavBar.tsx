@@ -5,6 +5,7 @@ import { StyledNavBar } from "../styled/NavBar.styled";
 
 import Logo from "../Logo";
 import NavItem from "../NavItem/NavItem";
+import SwitchLanguage from "../SwitchLanguage";
 
 const NavBar = () => {
   const intl = useIntl();
@@ -23,6 +24,8 @@ const NavBar = () => {
       {items.map(({ link, name }) => (
         <NavItem {...{ name, link }} />
       ))}
+
+      <SwitchLanguage />
     </StyledNavBar>
   );
 };
