@@ -3,10 +3,14 @@ import { FormattedMessage } from "gatsby-plugin-intl";
 
 import SubTitle from "../styled/SubTitle.styled";
 import Wrapper from "../styled/Wrapper.styled";
-import { PersonSupport } from "@styled-icons/fluentui-system-filled/PersonSupport";
-import { Code } from "@styled-icons/fluentui-system-regular/Code";
 
-import { ContentWrapper, CarrerItem } from "./Career.styled";
+import {
+  ContentWrapper,
+  CarrerItem,
+  StyledPersonSupport,
+  StyledCode,
+  Description,
+} from "./Career.styled";
 
 const Career = () => {
   return (
@@ -16,13 +20,17 @@ const Career = () => {
       </SubTitle>
       <ContentWrapper>
         <CarrerItem>
-          <PersonSupport />
-          <FormattedMessage id="my.it.carrer.support.description" />
+          <StyledPersonSupport />
+          <Description>
+            <FormattedMessage id="my.it.carrer.support.description" />
+          </Description>
         </CarrerItem>
 
         <CarrerItem>
-          <Code />
-          <FormattedMessage id="my.it.carrer.developer.description" />
+          <StyledCode />
+          <Description>
+            <FormattedMessage id="my.it.carrer.developer.description" />
+          </Description>
         </CarrerItem>
       </ContentWrapper>
     </Wrapper>

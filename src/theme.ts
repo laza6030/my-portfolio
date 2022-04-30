@@ -5,6 +5,7 @@ const theme = {
 
   text: {
     main: "#bde1ff",
+    white: "#ebffff",
   },
 
   title: {
