@@ -7,6 +7,8 @@
     "me.presentation":"My name is <bold>Laza Nantenaina</bold>_",
     "me.presentation.description":"I'm a Software Engineer and I love creating cool stuff",
     "my.it.carrer":"My IT career",
+    "my.it.carrer.support.title":"IT Support",
     "my.it.carrer.support.description":"I've been working as an IT Support for a while",
-    "my.it.carrer.developer.description":"Today I'm a Software Engineer :D"
+    "my.it.carrer.developer.title":"Developer",
+    "my.it.carrer.developer.description":"Today, I'm a Software Engineer :D"
 }
