@@ -2,6 +2,8 @@ import styled from "styled-components";
 
 export const Wrapper = styled.div`
   display: flex;
+  align-items: center;
+  width: min-content;
 `;
 
 export const DescriptionWrapper = styled.div``;
@@ -11,8 +13,8 @@ export const LogoWrapper = styled.div`
 `;
 
 export const Name = styled.p`
+  margin: unset;
   font-family: Nunito;
-  text-transform: uppercase;
 `;
 
 export const PercentageWrapper = styled.div`
@@ -21,8 +23,8 @@ export const PercentageWrapper = styled.div`
   background: ${({ theme }) => theme.text.main};
 `;
 
-export const Percentage = styled.div`
-  //   width: 50%;
+export const Percentage = styled.div<{ percentage: number }>`
+  width: ${({ percentage }) => percentage}%;
   height: 20px;
   background: ${({ theme }) => theme.title.main};
 `;
