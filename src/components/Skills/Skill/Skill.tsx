@@ -25,7 +25,7 @@ const Skill = (props: IProps) => {
         <Name>{name}</Name>
 
         <PercentageWrapper>
-          <Percentage></Percentage>
+          <Percentage percentage={percentage}></Percentage>
         </PercentageWrapper>
       </DescriptionWrapper>
     </Wrapper>
