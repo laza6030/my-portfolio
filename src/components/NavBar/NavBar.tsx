@@ -26,7 +26,7 @@ const NavBar = () => {
     }
   };
 
-  if (typeof window !== undefined)
+  if (typeof window !== "undefined")
     window.addEventListener("scroll", changeBackgroundColor);
 
   return (
