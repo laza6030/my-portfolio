@@ -1,13 +1,29 @@
 import { Link } from "gatsby";
 import styled from "styled-components";
 
-export const StyledNavBar = styled.div`
+export const StyledNavBar = styled.div<{ colorChange: boolean }>`
   display: flex;
   align-items: center;
   justify-content: space-between;
   height: 50px;
-  margin: 10px 0 30px 0;
+  margin-bottom: 30px;
   padding-right: 40px;
+  position: fixed;
+  width: 100%;
+  overflow: hidden;
+  top: 0;
+  z-index: 1;
+  background: none;
+  transition: background 250ms;
+  ${(props) => {
+    if (props.colorChange) {
+      return `
+      background: #2e3245;
+      box-shadow: 0 0 5px 0;
+      transition: background 250ms;
+      `;
+    }
+  }}
 `;
 
 export const StyledNavItem = styled.li`
