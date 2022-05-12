@@ -1,13 +1,27 @@
 import React from "react";
+import { FormattedMessage } from "gatsby-plugin-intl";
+import { EmailOutline } from "@styled-icons/evaicons-outline/EmailOutline";
+import { Telephone } from "@styled-icons/bootstrap/Telephone";
+
+import { Row } from "./Contact.styled";
+
+const EMAIL = "laza6030@gmail.com";
+const PHONE = "+261 34 22 521 68";
 
 const Contact = () => {
   return (
-    <div id="contact-me">
-      Don't hesitate to contact me at test@gmail.com Lorem ipsum dolor, sit amet
-      consectetur adipisicing elit. Illum non, magnam praesentium accusantium
-      saepe vitae minima unde rerum esse? Qui nam fuga quod quis veniam corrupti
-      id natus. Eveniet, voluptate. Lorem ipsum dolor sit, amet consectetur
-    </div>
+    <>
+      <FormattedMessage id="contact.me.title" />
+      <Row>
+        <EmailOutline />
+        {EMAIL}
+      </Row>
+
+      <Row>
+        <Telephone />
+        {PHONE}
+      </Row>
+    </>
   );
 };
 

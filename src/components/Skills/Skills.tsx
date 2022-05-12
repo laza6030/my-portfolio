@@ -1,4 +1,5 @@
 import React from "react";
+import { FormattedMessage } from "gatsby-plugin-intl";
 
 import Skill from "./Skill";
 
@@ -7,7 +8,9 @@ import { Html5 } from "@styled-icons/boxicons-logos/Html5";
 import { Css3 } from "@styled-icons/boxicons-logos/Css3";
 import { Nodejs } from "@styled-icons/boxicons-logos/Nodejs";
 import { ReactLogo } from "@styled-icons/boxicons-logos/ReactLogo";
-// import Paragraph from "../styled/Paragraph.styled";
+
+import { StyledImage } from "../styled/Image.styled";
+import { StaticImage } from "gatsby-plugin-image";
 
 const Skills = () => {
   const skills: { logo: React.ReactNode; name: string; percentage: number }[] =
@@ -19,12 +22,22 @@ const Skills = () => {
     ];
 
   return (
-    <>
-      <SubTitle>My Skills</SubTitle>
-      {skills.map(({ logo, name, percentage }) => (
-        <Skill {...{ logo, name, percentage }} />
+    <div>
+      <SubTitle>
+        <FormattedMessage id="my.skills" />
+      </SubTitle>
+
+      <StyledImage>
+        <StaticImage
+          src="../../images/undraw_certificate_re_yadi.svg"
+          alt="Profile"
+        />
+      </StyledImage>
+
+      {skills.map(({ logo, name, percentage }, index) => (
+        <Skill key={index + "-" + name} {...{ logo, name, percentage }} />
       ))}
-    </>
+    </div>
   );
 };
 
