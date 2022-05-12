@@ -26,7 +26,8 @@ const NavBar = () => {
     }
   };
 
-  window.addEventListener("scroll", changeBackgroundColor);
+  if (typeof window !== "undefined")
+    window.addEventListener("scroll", changeBackgroundColor);
 
   return (
     <StyledNavBar colorChange={colorChange}>
