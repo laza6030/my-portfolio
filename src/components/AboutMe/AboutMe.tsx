@@ -25,7 +25,7 @@ const About = () => {
         {/* <StaticImage src="../../images/profile.png" alt="Profile" /> */}
         <StaticImage
           src="../../images/undraw_programming_re_kg9v.svg"
-          alt="Profile"
+          alt="Programming illustration"
         />
       </StyledImage>
     </MainWrapper>
