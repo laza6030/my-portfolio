@@ -22,7 +22,11 @@ const Skills = () => {
     ];
 
   return (
-    <div>
+    <div
+      style={{
+        marginLeft: 200, // TO DO: remove it later
+      }}
+    >
       <SubTitle>
         <FormattedMessage id="my.skills" />
       </SubTitle>
