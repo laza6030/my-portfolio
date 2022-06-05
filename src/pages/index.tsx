@@ -8,7 +8,6 @@ import AboutMe from "../components/AboutMe";
 import Contact from "../components/Contact";
 import Brand from "../components/Brand";
 import Skills from "../components/Skills";
-import SocialMedia from "../components/SocialMedia";
 import Footer from "../components/Footer";
 
 import MainWrapper from "../components/styled/MainWrapper.styled";
@@ -21,12 +20,11 @@ const Home = () => {
       <MainWrapper>
         <NavBar />
         <AboutMe />
-        <Career />
+        {/* <Career /> */}
         <Skills />
         {/* 
         <Contact />
         <Brand /> */}
-        <SocialMedia />
         <Footer />
       </MainWrapper>
     </ThemeProvider>
