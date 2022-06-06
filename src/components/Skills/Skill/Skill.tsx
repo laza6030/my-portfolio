@@ -2,7 +2,6 @@ import React from "react";
 
 import {
   Wrapper,
-  DescriptionWrapper,
   LogoWrapper,
   Name,
   PercentageWrapper,
@@ -21,13 +20,11 @@ const Skill = (props: IProps) => {
     <Wrapper>
       <LogoWrapper>{logo}</LogoWrapper>
 
-      <DescriptionWrapper>
-        <Name>{name}</Name>
-
-        <PercentageWrapper>
-          <Percentage percentage={percentage}></Percentage>
-        </PercentageWrapper>
-      </DescriptionWrapper>
+      <PercentageWrapper>
+        <Percentage percentage={percentage}>
+          <Name>{name}</Name>
+        </Percentage>
+      </PercentageWrapper>
     </Wrapper>
   );
 };
