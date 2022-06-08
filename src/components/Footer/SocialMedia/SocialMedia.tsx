@@ -26,7 +26,7 @@ const SocialMedia = () => {
   return (
     <Wrapper>
       {socialMedia.map(({ name, link, icon }) => (
-        <StyledLink id={name} href={link}>
+        <StyledLink key={name} href={link}>
           {icon}
         </StyledLink>
       ))}

@@ -8,7 +8,7 @@ import { Nodejs } from "@styled-icons/boxicons-logos/Nodejs";
 import { ReactLogo } from "@styled-icons/boxicons-logos/ReactLogo";
 import { Tux } from "@styled-icons/boxicons-logos/Tux";
 
-import SubTitle from "../styled/SubTitle.styled";
+import { SubTitle } from "../styled";
 import Skill from "./Skill";
 
 import {
