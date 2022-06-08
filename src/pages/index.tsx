@@ -9,8 +9,9 @@ import Contact from "../components/Contact";
 import Brand from "../components/Brand";
 import Skills from "../components/Skills";
 import Footer from "../components/Footer";
+import Project from "../components/Project";
 
-import MainWrapper from "../components/styled/MainWrapper.styled";
+import { Wrapper as MainWrapper } from "../components/styled";
 
 import theme from "../theme";
 
@@ -21,6 +22,7 @@ const Home = () => {
         <NavBar />
         <AboutMe />
         {/* <Career /> */}
+        <Project />
         <Skills />
         {/* 
         <Contact />
