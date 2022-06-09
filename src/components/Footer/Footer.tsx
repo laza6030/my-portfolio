@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 
-import Paragraph from "../styled/Paragraph.styled";
+import { Paragraph } from "../styled";
 
 import SocialMedia from "./SocialMedia";
 
@@ -15,7 +15,8 @@ const Footer = () => {
     <>
       <SocialMedia />
       <CustomParagraph>
-        &copy; Copyright {new Date().getFullYear()} - All rights reserved
+        Designed & Developed by Laza Nantenaina &copy; Copyright{" "}
+        {new Date().getFullYear()} - All rights reserved
       </CustomParagraph>
     </>
   );
