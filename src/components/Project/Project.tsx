@@ -8,36 +8,43 @@ import ProjectItem from "./ProjectItem";
 import { MainWrapper, ProjectItemWrapper } from "./Project.styled";
 
 const Project = () => {
-  const ProjectList: { title: string; description: string; tools: string[] }[] =
-    [
-      {
-        title: "SmartPredict landing page",
-        description:
-          "Contribution to the development of SmartPredict's Landing page",
-        tools: ["Gatsby", "Material UI", "Javascript", "Prismic"],
-      },
-      {
-        title: "SmartPredict application",
-        description: "The actual web application which is Saas",
-        tools: [
-          "ReactJS",
-          "Typescript",
-          "Kubernetes",
-          "GraphQL",
-          "NodeJs",
-          "Material UI",
-          "Mongo",
-          "Redis",
-          "RabbitMQ",
-        ],
-      },
-      {
-        title: "My portfolio",
-        description:
-          "Current portfolio which is designed and developed entirely by myself. For me, it's big accomplishment",
-        tools: ["Gatsby", "Typescript", "styled-components", "styled-icons"],
-      },
-    ];
+  const ProjectList: {
+    title: string;
+    description: string;
+    tools: string[];
+    link: string;
+  }[] = [
+    {
+      title: "SmartPredict landing page",
+      description:
+        "Contribution to the development of SmartPredict's Landing page",
+      tools: ["Gatsby", "Material UI", "Javascript", "Prismic"],
+      link: "https://smartpredict.ai",
+    },
+    {
+      title: "SmartPredict application",
+      description: "The actual web application which is Saas",
+      tools: [
+        "ReactJS",
+        "Typescript",
+        "Material UI",
+        "GraphQL",
+        "NodeJs",
+        "Mongo",
+        "Kubernetes",
+        "RabbitMQ",
+        "Redis",
+      ],
+      link: "https://cloud.smartpredict.ai/",
+    },
+    {
+      title: "My portfolio",
+      description:
+        "Current portfolio which is designed and developed entirely by myself. For me, it's big accomplishment",
+      tools: ["Gatsby", "Typescript", "styled-components", "styled-icons"],
+      link: "https://laza.netlify.com/",
+    },
+  ];
 
   return (
     <MainWrapper>
@@ -46,8 +53,8 @@ const Project = () => {
       </SubTitle>
 
       <ProjectItemWrapper>
-        {ProjectList.map(({ title, description, tools }, index) => (
-          <ProjectItem {...{ key: index, title, description, tools }} />
+        {ProjectList.map(({ title, description, tools, link }, index) => (
+          <ProjectItem {...{ key: index, title, description, tools, link }} />
         ))}
       </ProjectItemWrapper>
     </MainWrapper>

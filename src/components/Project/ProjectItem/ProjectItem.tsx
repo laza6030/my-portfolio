@@ -1,5 +1,7 @@
 import React from "react";
 
+import PreviewButton from "../../../components/PreviewButton";
+
 import {
   MainWrapper,
   Title,
@@ -11,11 +13,12 @@ import {
 interface IProps {
   title: string;
   description: string;
+  link: string;
   tools: string[];
 }
 
 const ProjectItem = (props: IProps) => {
-  const { title, description, tools } = props;
+  const { title, description, tools, link } = props;
   return (
     <MainWrapper>
       <Title>{title}</Title>
@@ -27,6 +30,8 @@ const ProjectItem = (props: IProps) => {
           <Tool key={index}>{tool}</Tool>
         ))}
       </ToolWrapper>
+
+      <PreviewButton link={link} />
     </MainWrapper>
   );
 };
