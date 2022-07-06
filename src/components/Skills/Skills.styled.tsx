@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const MainWrapper = styled.div`
   margin-top: 40px;
-  margin-left: 140px;
+  margin-left: 40px;
   display: flex;
   flex-direction: column;
 `;

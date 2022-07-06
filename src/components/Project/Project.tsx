@@ -5,7 +5,7 @@ import { FormattedMessage } from "gatsby-plugin-intl";
 import { SubTitle } from "../styled";
 import ProjectItem from "./ProjectItem";
 
-import { MainWrapper, ProjectItemWrapper } from "./Project.styled";
+import { ProjectItemWrapper, MainWrapper } from "./Project.styled";
 
 const Project = () => {
   const ProjectList: {

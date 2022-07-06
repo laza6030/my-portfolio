@@ -1,6 +1,7 @@
 import styled from "styled-components";
 
-export const StyledLogo = styled.div`
+export const CustomLink = styled.a`
+  background: unset;
   font-family: Ubuntu;
   margin: 0 auto 0 15px;
   color: ${({ theme }) => theme.text.main};
