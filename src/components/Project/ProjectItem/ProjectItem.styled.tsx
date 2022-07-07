@@ -4,7 +4,7 @@ export const MainWrapper = styled.div`
   display: flex;
   flex-direction: column;
   width: 20%;
-  height: 350px;
+  min-height: 350px;
   box-shadow: 0 0 4px -1px ${({ theme }) => theme.text.white};
   padding: 10px 20px 0 20px;
   margin-bottom: 20px;

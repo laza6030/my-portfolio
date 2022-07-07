@@ -5,16 +5,11 @@ import { StaticImage } from "gatsby-plugin-image";
 
 import { StyledImage } from "../styled/Image.styled";
 import { Title } from "../styled/Title.styled";
-import {
-  TitleWrapper,
-  MainWrapper,
-  Wrapper,
-  Description,
-} from "./About.styled";
+import { TitleWrapper, Wrapper, Description } from "./About.styled";
 
 const About = () => {
   return (
-    <MainWrapper>
+    <>
       <Wrapper id="about">
         <TitleWrapper>
           <Title>
@@ -44,7 +39,7 @@ const About = () => {
           <FormattedMessage id="me.software.engineer.description" />
         </Description>
       </Wrapper>
-    </MainWrapper>
+    </>
   );
 };
 
