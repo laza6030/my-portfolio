@@ -1,14 +1,7 @@
 import React from "react";
 
-import { CustomLink } from "../styled";
 import { StyledLink } from "./Logo.styled";
 
-const Logo = () => {
-  return (
-    <CustomLink>
-      <StyledLink to="/#about">&gt;ln_</StyledLink>
-    </CustomLink>
-  );
-};
+const Logo = () => <StyledLink to="/#about">&gt;ln_</StyledLink>;
 
 export default Logo;
