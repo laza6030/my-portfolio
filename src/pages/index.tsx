@@ -2,7 +2,7 @@ import React from "react";
 
 import { ThemeProvider } from "styled-components";
 
-import { Helmet } from "react-helmet";
+// import { Helmet } from "react-helmet";
 
 import Career from "../components/Career";
 import AboutMe from "../components/AboutMe";
@@ -18,9 +18,9 @@ import theme from "../theme";
 const Home = () => {
   return (
     <ThemeProvider theme={theme}>
-      <Helmet>
+      {/* <Helmet>
         <title>Laza Nantenaina</title>
-      </Helmet>
+      </Helmet> */}
       <Layout>
         <AboutMe />
         {/* <Career /> */}
