@@ -29,7 +29,7 @@ const Skills = () => {
     ];
 
   return (
-    <MainWrapper>
+    <MainWrapper id="skills">
       <SubTitle>
         <FormattedMessage id="my.skills" />
       </SubTitle>

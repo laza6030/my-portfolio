@@ -20,7 +20,7 @@ const PHONE = "+261 34 22 521 68";
 
 const Contact = () => {
   return (
-    <Wrapper>
+    <Wrapper id="contact">
       <LetsBuild>
         <SubTitle>
           <FormattedMessage id="contact.let.create" />

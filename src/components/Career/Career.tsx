@@ -1,7 +1,7 @@
 import React from "react";
 import { FormattedMessage } from "gatsby-plugin-intl";
 
-import SubTitle from "../styled/SubTitle.styled";
+import { SubTitle } from "../styled/SubTitle.styled";
 
 import {
   ContentWrapper,

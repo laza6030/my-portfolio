@@ -3,9 +3,8 @@ import { useIntl } from "gatsby-plugin-intl";
 
 import { StyledNavBar } from "../styled/NavBar.styled";
 
-import Logo from "../Logo";
 import NavItem from "../NavItem/NavItem";
-// import SwitchLanguage from "../SwitchLanguage"; TO DO LATER
+import Logo from "../Logo";
 
 const NavBar = () => {
   const intl = useIntl();
@@ -36,8 +35,6 @@ const NavBar = () => {
       {items.map(({ link, name }, index) => (
         <NavItem key={index + "-" + name} {...{ name, link }} />
       ))}
-
-      {/* <SwitchLanguage /> */}
     </StyledNavBar>
   );
 };
