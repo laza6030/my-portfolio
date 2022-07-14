@@ -3,7 +3,7 @@ module.exports = {
     `gatsby-plugin-sharp`,
     `gatsby-plugin-styled-components`,
     `gatsby-plugin-image`,
-    // `gatsby-plugin-react-helmet`,
+    `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-plugin-google-fonts`,
       options: {
@@ -24,15 +24,15 @@ module.exports = {
         redirect: true,
       },
     },
-    // {
-    //   resolve: `gatsby-plugin-manifest`,
-    //   options: {
-    //     name: `my-portfolio`,
-    //     short_name: `portfolio`,
-    //     start_url: `/`,
-    //     display: `standalone`,
-    //     icon: `src/images/favicon.png`,
-    //   },
-    // },
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: `my-portfolio`,
+        short_name: `portfolio`,
+        start_url: `/`,
+        display: `standalone`,
+        icon: `src/images/favicon.png`,
+      },
+    },
   ],
 };
