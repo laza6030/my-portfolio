@@ -26,12 +26,6 @@ export const StyledNavBar = styled.div<{ colorChange: boolean }>`
   }}
 `;
 
-export const StyledNavItem = styled.li`
-  font-family: Nunito;
-  list-style: none;
-  margin: 0 35px;
-`;
-
 export const StyledLink = styled(Link)`
   color: ${({ theme }) => theme.text.main};
   text-decoration: none;
