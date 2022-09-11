@@ -6,22 +6,23 @@ import {
   Name,
   PercentageWrapper,
   Percentage,
-} from "./Skill.styled";
+} from "./SkillItem.styled";
 
 interface IProps {
   logo: React.ReactNode;
   name: string;
   percentage: number;
+  inView: boolean;
 }
 
 const Skill = (props: IProps) => {
-  const { logo, name, percentage } = props;
+  const { logo, name, percentage, inView } = props;
   return (
     <Wrapper>
       <LogoWrapper>{logo}</LogoWrapper>
 
       <PercentageWrapper>
-        <Percentage percentage={percentage}>
+        <Percentage {...{ percentage, inView }}>
           <Name>{name}</Name>
         </Percentage>
       </PercentageWrapper>

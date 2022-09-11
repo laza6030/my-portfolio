@@ -1,4 +1,5 @@
 import React from "react";
+import { InView } from "react-intersection-observer";
 import { FormattedMessage } from "gatsby-plugin-intl";
 import { StaticImage } from "gatsby-plugin-image";
 
@@ -8,8 +9,8 @@ import { Nodejs } from "@styled-icons/boxicons-logos/Nodejs";
 import { ReactLogo } from "@styled-icons/boxicons-logos/ReactLogo";
 import { Tux } from "@styled-icons/boxicons-logos/Tux";
 
+import SkillItem from "./SkillItem";
 import { SubTitle } from "../styled";
-import Skill from "./Skill";
 
 import {
   MainWrapper,
@@ -42,11 +43,18 @@ const Skills = () => {
           />
         </ImageWrapper>
 
-        <SkillWrapper>
-          {skills.map(({ logo, name, percentage }, index) => (
-            <Skill key={index + "-" + name} {...{ logo, name, percentage }} />
-          ))}
-        </SkillWrapper>
+        <InView triggerOnce>
+          {({ inView, ref }) => (
+            <SkillWrapper ref={ref}>
+              {skills.map(({ logo, name, percentage }, index) => (
+                <SkillItem
+                  key={index + "-" + name}
+                  {...{ logo, name, percentage, inView }}
+                />
+              ))}
+            </SkillWrapper>
+          )}
+        </InView>
       </SubWrapper>
     </MainWrapper>
   );
