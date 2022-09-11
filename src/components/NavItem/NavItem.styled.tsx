@@ -16,7 +16,7 @@ export const StyledNavItem = styled.li<{ top: number }>`
   list-style: none;
   opacity: 1;
   margin: 0 35px;
-  animation-name: ${(props) => navItemAnimation(props.top)};
+  animation-name: ${({ top }) => navItemAnimation(top)};
   animation-duration: 0.8s;
   animation-timing-function: ease-out;
 `;

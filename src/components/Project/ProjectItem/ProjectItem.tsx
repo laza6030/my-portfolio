@@ -15,12 +15,14 @@ interface IProps {
   description: string;
   link: string;
   tools: string[];
+  top: number;
+  inView: boolean;
 }
 
 const ProjectItem = (props: IProps) => {
-  const { title, description, tools, link } = props;
+  const { title, description, tools, link, top, inView } = props;
   return (
-    <MainWrapper>
+    <MainWrapper top={top} inView={inView}>
       <Title>{title}</Title>
 
       <Description>{description}</Description>
