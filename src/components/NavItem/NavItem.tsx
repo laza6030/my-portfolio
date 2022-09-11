@@ -1,16 +1,18 @@
 import React from "react";
 
-import { StyledNavItem, StyledLink } from "../styled/NavBar.styled";
+import { StyledLink } from "../styled/NavBar.styled";
+import { StyledNavItem } from "./NavItem.styled";
 
 interface IProps {
   name: string;
   link: string;
+  top: number;
 }
 
 const NavItem = (props: IProps) => {
-  const { name, link } = props;
+  const { name, link, top } = props;
   return (
-    <StyledNavItem>
+    <StyledNavItem top={top}>
       <StyledLink to={link}>{name}</StyledLink>
     </StyledNavItem>
   );

@@ -54,7 +54,10 @@ const Project = () => {
 
       <ProjectItemWrapper>
         {ProjectList.map(({ title, description, tools, link }, index) => (
-          <ProjectItem {...{ key: index, title, description, tools, link }} />
+          <ProjectItem
+            {...{ key: index, title, description, tools, link }}
+            top={(index + 1) * 25} // Define the starting animation position
+          />
         ))}
       </ProjectItemWrapper>
     </MainWrapper>

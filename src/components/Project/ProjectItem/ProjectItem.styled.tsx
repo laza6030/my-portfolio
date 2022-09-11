@@ -1,7 +1,19 @@
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
 
-export const MainWrapper = styled.div`
+const animation = (top: number) => keyframes`
+  from {
+    opacity: 0;
+    top: ${top}px;
+  }
+  to {
+    opacity: 1;
+    top: 0;
+  }
+`;
+
+export const MainWrapper = styled.div<{ top: number; inView: boolean }>`
   display: flex;
+  position: relative;
   flex-direction: column;
   width: 20%;
   min-height: 350px;
@@ -11,6 +23,8 @@ export const MainWrapper = styled.div`
   &:hover {
     box-shadow: 0 0 5px -1px ${({ theme }) => theme.text.white};
   }
+  animation-name: ${({ top, inView }) => (inView ? animation(top) : "")};
+  animation-duration: 1s;
 `;
 
 export const Title = styled.h3`

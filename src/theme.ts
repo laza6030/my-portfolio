@@ -6,6 +6,7 @@ const theme = {
   text: {
     main: "#bde1ff",
     white: "#ebffff",
+    highlight: "#00e5d7",
   },
 
   title: {

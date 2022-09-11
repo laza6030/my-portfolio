@@ -1,4 +1,5 @@
 import React from "react";
+import { InView } from "react-intersection-observer";
 
 import PreviewButton from "../../../components/PreviewButton";
 
@@ -15,24 +16,29 @@ interface IProps {
   description: string;
   link: string;
   tools: string[];
+  top: number;
 }
 
 const ProjectItem = (props: IProps) => {
-  const { title, description, tools, link } = props;
+  const { title, description, tools, link, top } = props;
   return (
-    <MainWrapper>
-      <Title>{title}</Title>
+    <InView triggerOnce>
+      {({ ref, inView }) => (
+        <MainWrapper top={top} inView={inView}>
+          <Title ref={ref}>{title}</Title>
 
-      <Description>{description}</Description>
+          <Description>{description}</Description>
 
-      <ToolWrapper>
-        {tools.map((tool, index) => (
-          <Tool key={index}>{tool}</Tool>
-        ))}
-      </ToolWrapper>
+          <ToolWrapper>
+            {tools.map((tool, index) => (
+              <Tool key={index}>{tool}</Tool>
+            ))}
+          </ToolWrapper>
 
-      <PreviewButton link={link} />
-    </MainWrapper>
+          <PreviewButton link={link} />
+        </MainWrapper>
+      )}
+    </InView>
   );
 };
 

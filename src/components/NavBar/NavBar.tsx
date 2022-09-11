@@ -33,7 +33,11 @@ const NavBar = () => {
       <Logo />
 
       {items.map(({ link, name }, index) => (
-        <NavItem key={index + "-" + name} {...{ name, link }} />
+        <NavItem
+          key={index + "-" + name}
+          {...{ name, link }}
+          top={(index + 1) * 80} // Define the sliding nav bar animation timing
+        />
       ))}
     </StyledNavBar>
   );

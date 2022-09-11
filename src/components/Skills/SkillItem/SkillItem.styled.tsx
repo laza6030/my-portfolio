@@ -1,4 +1,14 @@
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
+
+const percentageAnimation = (width: number) => keyframes`
+  from {
+    width: 0
+  }
+
+  to {
+    width: ${width}%
+  }
+`;
 
 export const Wrapper = styled.div`
   display: flex;
@@ -23,8 +33,12 @@ export const PercentageWrapper = styled.div`
   background: ${({ theme }) => theme.text.main};
 `;
 
-export const Percentage = styled.div<{ percentage: number }>`
+export const Percentage = styled.div<{ percentage: number; inView: boolean }>`
   width: ${({ percentage }) => percentage}%;
   height: 20px;
   background: ${({ theme }) => theme.title.main};
+  animation-name: ${({ percentage, inView }) =>
+    inView ? percentageAnimation(percentage) : ""};
+  animation-duration: ${({ percentage }) => percentage / 100 + 0.5}s;
+  animation-timing-function: ease-in;
 `;
