@@ -1,5 +1,29 @@
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
 import { CustomLink } from "../styled";
+
+const descriptionAnimation = keyframes`
+from {
+  top: 50px;
+  opacity: 0;
+}
+
+to {
+  top: 0;
+  opacity: 1;
+}
+`;
+
+const ctaAnimation = keyframes`
+from {
+  top: 70px;
+  opacity: 0;
+}
+
+to {
+  top: 0;
+  opacity: 1;
+}
+`;
 
 export const Wrapper = styled.div`
   margin-top: 80px;
@@ -9,8 +33,11 @@ export const Wrapper = styled.div`
 `;
 
 export const Description = styled.p`
+  position: relative;
   font-family: Nunito;
   color: ${({ theme }) => theme.text.white};
+  animation-name: ${descriptionAnimation};
+  animation-duration: 1.25s;
 `;
 
 export const LetsBuild = styled.div`
@@ -19,9 +46,12 @@ export const LetsBuild = styled.div`
 `;
 
 export const CTA = styled(CustomLink)`
+  position: relative;
   width: fit-content;
   text-decoration: none;
   text-transform: capitalize;
+  animation-name: ${ctaAnimation};
+  animation-duration: 1.5s;
 `;
 
 export const IconWrapper = styled.div`

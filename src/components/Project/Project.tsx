@@ -1,5 +1,4 @@
 import React from "react";
-import { InView } from "react-intersection-observer";
 
 import { FormattedMessage } from "gatsby-plugin-intl";
 
@@ -53,20 +52,14 @@ const Project = () => {
         <FormattedMessage id="project" />
       </SubTitle>
 
-      <InView triggerOnce>
-        {({ inView, ref }) => (
-          <>
-            <ProjectItemWrapper ref={ref}>
-              {ProjectList.map(({ title, description, tools, link }, index) => (
-                <ProjectItem
-                  {...{ key: index, title, description, tools, link, inView }}
-                  top={(index + 1) * 25} // Define the starting animation position
-                />
-              ))}
-            </ProjectItemWrapper>
-          </>
-        )}
-      </InView>
+      <ProjectItemWrapper>
+        {ProjectList.map(({ title, description, tools, link }, index) => (
+          <ProjectItem
+            {...{ key: index, title, description, tools, link }}
+            top={(index + 1) * 25} // Define the starting animation position
+          />
+        ))}
+      </ProjectItemWrapper>
     </MainWrapper>
   );
 };
