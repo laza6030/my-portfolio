@@ -21,20 +21,12 @@ export const Highlight = styled.span`
 
 export const Wrapper = styled.div`
   display: flex;
-  justify-content: space-around;
   margin-top: 80px;
-`;
-
-export const Description = styled.div`
-  width: 50%;
-  color: ${({ theme }) => theme.text.white};
-  font-family: Nunito;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  height: 70vh;
 `;
 
 export const TitleWrapper = styled.div`
+  width: 50%;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -43,4 +35,10 @@ export const TitleWrapper = styled.div`
   font-family: Nunito;
   animation: ${animation};
   animation-duration: 2.5s;
+`;
+
+export const StyledImage = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
 `;
