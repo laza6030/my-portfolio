@@ -3,57 +3,58 @@ import { FormattedMessage } from "gatsby-plugin-intl";
 
 import { StaticImage } from "gatsby-plugin-image";
 
-import { StyledImage } from "../styled/Image.styled";
-import { Title } from "../styled/Title.styled";
+import { Title, Paragraph } from "../styled";
 import {
   TitleWrapper,
   Wrapper,
-  Description,
   Name,
   Highlight,
+  StyledImage,
 } from "./About.styled";
 
 const About = () => (
-  <>
-    <Wrapper id="about">
-      <TitleWrapper>
-        <Title>
-          <FormattedMessage
-            id="me.presentation"
-            values={{
-              bold: (chunck: string) => <Name>{chunck}</Name>,
-            }}
-          />
-        </Title>
-
-        <div>
-          <FormattedMessage
-            id="me.presentation.description"
-            values={{
-              highlight: (chunck: string) => <Highlight>{chunck}</Highlight>,
-            }}
-          />
-        </div>
-      </TitleWrapper>
-
-      <StyledImage>
-        <StaticImage
-          src="../../images/undraw_programming_re_kg9v.svg"
-          alt="Programming illustration"
+  <Wrapper id="about">
+    <TitleWrapper>
+      <Title>
+        <FormattedMessage
+          id="me.presentation"
+          values={{
+            bold: (chunck: string) => <Name>{chunck}</Name>,
+          }}
         />
-      </StyledImage>
-    </Wrapper>
+      </Title>
 
-    <Wrapper>
-      <StaticImage src="../../images/avatar.svg" alt="Avatar" />
-      <Description>
-        <Title>
-          <FormattedMessage id="me.software.engineer" />
-        </Title>
+      <Paragraph>
+        <FormattedMessage
+          id="me.presentation.description"
+          values={{
+            highlight: (chunck: string) => <Highlight>{chunck}</Highlight>,
+          }}
+        />
+      </Paragraph>
+
+      <Paragraph>
         <FormattedMessage id="me.software.engineer.description" />
-      </Description>
-    </Wrapper>
-  </>
+      </Paragraph>
+    </TitleWrapper>
+
+    <StyledImage>
+      <StaticImage
+        src="../../images/undraw_programming_re_kg9v.svg"
+        alt="Programming illustration"
+      />
+    </StyledImage>
+
+    {/* Move to profil section (new component) */}
+    {/* <Wrapper>
+        <StaticImage src="../../images/avatar.svg" alt="Avatar" />
+        <Description>
+          <Title>
+            <FormattedMessage id="me.software.engineer" />
+          </Title>
+        </Description>
+      </Wrapper> */}
+  </Wrapper>
 );
 
 export default About;

@@ -8,6 +8,7 @@ import SocialMedia from "./SocialMedia";
 const CustomParagraph = styled(Paragraph)`
   font-size: x-small;
   text-align: center;
+  color: ${({ theme }) => theme.text.white};
 `;
 
 const Footer = () => {
