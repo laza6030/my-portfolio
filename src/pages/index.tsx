@@ -10,6 +10,7 @@ import Contact from "../components/Contact";
 import Brand from "../components/Brand";
 import Skills from "../components/Skills";
 import Project from "../components/Project";
+import Profile from "../components/Profile";
 
 import Layout from "../components/Layout";
 
@@ -23,6 +24,7 @@ const Home = () => {
       </Helmet>
       <Layout>
         <AboutMe />
+        <Profile />
         {/* <Career /> */}
         <Project />
         <Skills />
