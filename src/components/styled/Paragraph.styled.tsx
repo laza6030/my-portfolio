@@ -4,4 +4,5 @@ export const Paragraph = styled.p`
   font-family: Nunito;
   text-align: justify;
   margin: 5px;
+  color: ${({ theme }) => theme.text.white};
 `;
