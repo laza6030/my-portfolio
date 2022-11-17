@@ -10,6 +10,11 @@ const animation = keyframes`
   }
 `;
 
+export const Greeting = styled.p`
+  font-size: 40px;
+  margin: 0px;
+`;
+
 export const Name = styled.span`
   margin-left: 10px;
   color: ${({ theme }) => theme.text.highlight};
@@ -21,8 +26,7 @@ export const Highlight = styled.span`
 
 export const Wrapper = styled.div`
   display: flex;
-  margin-top: 80px;
-  height: 70vh;
+  height: 100vh;
 `;
 
 export const TitleWrapper = styled.div`
@@ -41,4 +45,5 @@ export const StyledImage = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 50%;
 `;

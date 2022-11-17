@@ -4,17 +4,11 @@ import { FormattedMessage } from "gatsby-plugin-intl";
 import { StaticImage } from "gatsby-plugin-image";
 
 import { Paragraph } from "../styled";
-import { Wrapper } from "./Profile.styled";
+import { Wrapper, ImageWrapper, DescriptionWrapper } from "./Profile.styled";
 
 const Profile = () => (
   <Wrapper>
-    <div
-      style={{
-        paddingLeft: 100,
-        paddingRight: 100,
-        width: "100%",
-      }}
-    >
+    <ImageWrapper>
       <StaticImage
         src="../../images/profile_1.png"
         alt="Profile picture"
@@ -24,17 +18,13 @@ const Profile = () => (
           borderRadius: 5,
         }}
       />
-    </div>
+    </ImageWrapper>
 
-    <div>
+    <DescriptionWrapper>
       <Paragraph>
-        <FormattedMessage id="profile.first.paragraph" />
+        <FormattedMessage id="me.software.engineer.description" />
       </Paragraph>
-
-      <Paragraph>
-        <FormattedMessage id="profile.second.paragraph" />
-      </Paragraph>
-    </div>
+    </DescriptionWrapper>
   </Wrapper>
 );
 

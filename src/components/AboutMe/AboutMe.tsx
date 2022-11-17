@@ -10,11 +10,16 @@ import {
   Name,
   Highlight,
   StyledImage,
+  Greeting,
 } from "./About.styled";
 
 const About = () => (
   <Wrapper id="about">
     <TitleWrapper>
+      <Greeting>
+        <FormattedMessage id="me.greeting" />
+      </Greeting>
+
       <Title>
         <FormattedMessage
           id="me.presentation"
@@ -23,7 +28,6 @@ const About = () => (
           }}
         />
       </Title>
-
       <Paragraph>
         <FormattedMessage
           id="me.presentation.description"
@@ -31,10 +35,6 @@ const About = () => (
             highlight: (chunck: string) => <Highlight>{chunck}</Highlight>,
           }}
         />
-      </Paragraph>
-
-      <Paragraph>
-        <FormattedMessage id="me.software.engineer.description" />
       </Paragraph>
     </TitleWrapper>
 
@@ -44,16 +44,6 @@ const About = () => (
         alt="Programming illustration"
       />
     </StyledImage>
-
-    {/* Move to profil section (new component) */}
-    {/* <Wrapper>
-        <StaticImage src="../../images/avatar.svg" alt="Avatar" />
-        <Description>
-          <Title>
-            <FormattedMessage id="me.software.engineer" />
-          </Title>
-        </Description>
-      </Wrapper> */}
   </Wrapper>
 );
 
