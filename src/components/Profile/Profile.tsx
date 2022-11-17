@@ -28,11 +28,7 @@ const Profile = () => (
 
     <div>
       <Paragraph>
-        <FormattedMessage id="profile.first.paragraph" />
-      </Paragraph>
-
-      <Paragraph>
-        <FormattedMessage id="profile.second.paragraph" />
+        <FormattedMessage id="me.software.engineer.description" />
       </Paragraph>
     </div>
   </Wrapper>
