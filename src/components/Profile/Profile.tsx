@@ -3,8 +3,10 @@ import React from "react";
 import { FormattedMessage } from "gatsby-plugin-intl";
 import { StaticImage } from "gatsby-plugin-image";
 
-import { Paragraph } from "../styled";
 import { Wrapper, ImageWrapper, DescriptionWrapper } from "./Profile.styled";
+import { Paragraph } from "../styled";
+
+import Tools from "./Tools";
 
 const Profile = () => (
   <Wrapper>
@@ -22,8 +24,14 @@ const Profile = () => (
 
     <DescriptionWrapper>
       <Paragraph>
-        <FormattedMessage id="me.software.engineer.description" />
+        <FormattedMessage id="me.software.engineer.first.description" />
       </Paragraph>
+
+      <Paragraph>
+        <FormattedMessage id="me.software.engineer.second.description" />
+      </Paragraph>
+
+      <Tools />
     </DescriptionWrapper>
   </Wrapper>
 );
