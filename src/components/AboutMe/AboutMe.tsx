@@ -20,7 +20,7 @@ const About = () => (
         <FormattedMessage id="me.greeting" />
       </Greeting>
 
-      <Title>
+      <Title top={10} duration={1} delay={0.25}>
         <FormattedMessage
           id="me.presentation"
           values={{
@@ -28,7 +28,7 @@ const About = () => (
           }}
         />
       </Title>
-      <Paragraph>
+      <Paragraph top={10} duration={1} delay={0.4}>
         <FormattedMessage
           id="me.presentation.description"
           values={{

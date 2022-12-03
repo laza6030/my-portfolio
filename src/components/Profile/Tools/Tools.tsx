@@ -29,7 +29,7 @@ const Tools = () => {
 
   return (
     <>
-      <Paragraph>
+      <Paragraph top={10} duration={1} delay={0.4}>
         <FormattedMessage id="profile.tools.title" />
       </Paragraph>
 
