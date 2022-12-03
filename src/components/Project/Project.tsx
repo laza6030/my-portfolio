@@ -31,6 +31,7 @@ const Project = () => {
         "GraphQL",
         "NodeJs",
         "Mongo",
+        "Docker",
         "Kubernetes",
         "RabbitMQ",
         "Redis",
