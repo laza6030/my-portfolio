@@ -15,13 +15,15 @@ export const MainWrapper = styled.div<{ top: number; inView: boolean }>`
   display: flex;
   position: relative;
   flex-direction: column;
-  max-width: 250px;
+  width: 250px;
   min-height: 350px;
   background-color: ${({ theme }) => theme.background.dark};
   padding: 10px 20px 0 20px;
+  margin-right: 10px;
   margin-bottom: 20px;
+  transition: transform 300ms;
   &:hover {
-    top: -3px;
+    transform: translateY(-3px);
   }
   animation-name: ${({ top, inView }) => (inView ? animation(top) : "")};
   animation-duration: 1s;
