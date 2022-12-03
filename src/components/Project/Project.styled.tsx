@@ -8,5 +8,4 @@ export const MainWrapper = styled.div`
 export const ProjectItemWrapper = styled.div`
   display: flex;
   justify-content: space-between;
-  margin-right: 50px;
 `;

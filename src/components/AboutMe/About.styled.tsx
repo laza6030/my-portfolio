@@ -1,18 +1,24 @@
 import styled, { keyframes } from "styled-components";
 
-const animation = keyframes`
+const bottomToUpAnimation = keyframes`
   from {
+    top: 10px;
     opacity: 0;
   }
 
   to {
+    top: 0px;
     opacity: 1;
   }
 `;
 
 export const Greeting = styled.p`
+  position: relative;
   font-size: 40px;
   margin: 0px;
+  opacity: 0;
+  animation: ${bottomToUpAnimation} 500ms linear;
+  animation-fill-mode: forwards;
 `;
 
 export const Name = styled.span`
@@ -30,6 +36,7 @@ export const Wrapper = styled.div`
 `;
 
 export const TitleWrapper = styled.div`
+  position: relative;
   width: 50%;
   display: flex;
   flex-direction: column;
@@ -37,13 +44,15 @@ export const TitleWrapper = styled.div`
   justify-content: center;
   color: ${({ theme }) => theme.text.white};
   font-family: Nunito;
-  animation: ${animation};
-  animation-duration: 2.5s;
 `;
 
 export const StyledImage = styled.div`
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
   width: 50%;
+  opacity: 0;
+  animation: ${bottomToUpAnimation} 500ms linear;
+  animation-fill-mode: forwards;
 `;

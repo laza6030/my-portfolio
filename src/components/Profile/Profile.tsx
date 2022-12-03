@@ -23,11 +23,11 @@ const Profile = () => (
     </ImageWrapper>
 
     <DescriptionWrapper>
-      <Paragraph>
+      <Paragraph top={10} duration={1} delay={0.4}>
         <FormattedMessage id="me.software.engineer.first.description" />
       </Paragraph>
 
-      <Paragraph>
+      <Paragraph top={10} duration={1} delay={0.4}>
         <FormattedMessage id="me.software.engineer.second.description" />
       </Paragraph>
 
