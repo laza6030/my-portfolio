@@ -25,7 +25,7 @@ const Project = () => {
       title: "SmartPredict application",
       description: "The actual web application which is Saas",
       tools: [
-        "ReactJS",
+        "React",
         "Typescript",
         "Material UI",
         "GraphQL",
@@ -39,10 +39,17 @@ const Project = () => {
       link: "https://cloud.smartpredict.ai/",
     },
     {
-      title: "My portfolio",
+      title: "Reflexion Capital",
       description:
-        "Current portfolio which is designed and developed entirely by myself. For me, it's big accomplishment",
-      tools: ["Gatsby", "Typescript", "styled-components", "styled-icons"],
+        "It is an application that allows to manage customers and users in a company.",
+      tools: [
+        "React",
+        "Typescript",
+        "Material UI",
+        "Firebase",
+        "Firestore",
+        "Cloud function",
+      ],
       link: "https://laza.netlify.com/",
     },
   ];
