@@ -1,6 +1,6 @@
 import styled, { keyframes } from "styled-components";
 
-const animation = (top: number) => keyframes`
+const animation = (top?: number) => keyframes`
   from {
     top: ${top}px;
     opacity: 0;
@@ -13,9 +13,9 @@ const animation = (top: number) => keyframes`
 `;
 
 export const Paragraph = styled.p<{
-  top: number;
-  duration: number;
-  delay: number;
+  top?: number;
+  duration?: number;
+  delay?: number;
 }>`
   position: relative;
   font-family: Nunito;

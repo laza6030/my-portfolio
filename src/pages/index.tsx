@@ -11,6 +11,7 @@ import Brand from "../components/Brand";
 import Skills from "../components/Skills";
 import Project from "../components/Project";
 import Profile from "../components/Profile";
+import SideProject from "../components/SideProject";
 
 import Layout from "../components/Layout";
 
@@ -27,6 +28,7 @@ const Home = () => {
         <Profile />
         {/* <Career /> */}
         <Project />
+        <SideProject />
         {/* <Skills /> */}
         <Contact />
         {/* 

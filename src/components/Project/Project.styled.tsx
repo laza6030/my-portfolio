@@ -2,7 +2,8 @@ import styled from "styled-components";
 
 export const MainWrapper = styled.div`
   margin-left: 40px;
-  margin-top: 100px;
+  margin-top: 80px;
+  margin-bottom: 100px;
 `;
 
 export const ProjectItemWrapper = styled.div`
