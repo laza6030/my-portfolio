@@ -55,7 +55,7 @@ const Project = () => {
   ];
 
   return (
-    <MainWrapper>
+    <MainWrapper id="projects">
       <SubTitle>
         <FormattedMessage id="project" />
       </SubTitle>
