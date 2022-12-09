@@ -4,7 +4,9 @@ import { MOBILE_DEVICE_WIDTH } from "../constants";
 const SCREEN_DEFAULT_WIDTH = 1024; // This is an arbitrary choice
 
 export const useGetWindowWidth = () => {
-  const [width, setWidth] = useState(SCREEN_DEFAULT_WIDTH);
+  const [width, setWidth] = useState(
+    typeof screen !== "undefined" ? screen.width : SCREEN_DEFAULT_WIDTH
+  );
 
   useEffect(() => {
     if (screen) {
