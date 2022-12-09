@@ -1,10 +1,8 @@
 import React, { ReactNode } from "react";
 
-import MobileNavBar from "../MobileNavBar";
-import NavBar from "../NavBar";
+import Header from "../Header";
 import Footer from "../Footer";
 
-import { useGetWindowWidth } from "../../hooks";
 import { Wrapper } from "./Layout.styled";
 
 interface IProps {
@@ -12,11 +10,9 @@ interface IProps {
 }
 
 const Layout = ({ children }: IProps) => {
-  const { isMobile } = useGetWindowWidth();
   return (
     <>
-      {isMobile ? <MobileNavBar /> : <NavBar />}
-
+      <Header />
       <Wrapper>{children}</Wrapper>
       <Footer />
     </>
