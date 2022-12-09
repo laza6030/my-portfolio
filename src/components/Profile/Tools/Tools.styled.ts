@@ -1,6 +1,7 @@
 import styled from "styled-components";
 
 export const Tool = styled.div`
+  width: max-content;
   font-family: Nunito;
   display: flex;
   align-items: center;
