@@ -19,6 +19,11 @@ export const ImageWrapper = styled.div`
   @media (max-width: 768px) {
     margin-right: 0px;
   }
+
+  @media (max-width: 425px) {
+    margin-bottom: 20px;
+    width: 75%;
+  }
 `;
 
 export const DescriptionWrapper = styled.div`

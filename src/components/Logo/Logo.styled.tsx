@@ -20,6 +20,7 @@ export const StyledLink = styled(Link)`
   color: ${({ theme }) => theme.text.main};
   border: 1px solid ${({ theme }) => theme.text.main};
   padding: 5px 20px;
+  height: 20px;
   transition-property: background, color;
   transition-duration: 0.4s;
   animation-name: ${logoAnimation};

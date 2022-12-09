@@ -27,6 +27,10 @@ export const MainWrapper = styled.div<{ top: number; inView: boolean }>`
   }
   animation-name: ${({ top, inView }) => (inView ? animation(top) : "")};
   animation-duration: 1s;
+
+  @media (max-width: 425px) {
+    margin-right: 0px;
+  }
 `;
 
 export const Title = styled.h3`

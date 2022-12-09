@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import { MOBILE_DEVICE_WIDTH } from "../constants";
 
 export const useGetWindowWidth = () => {
   const [width, setWidth] = useState(screen.width);
@@ -8,5 +9,7 @@ export const useGetWindowWidth = () => {
     return window.removeEventListener("resize", () => setWidth(screen.width));
   }, []);
 
-  return { width };
+  const isMobile = width <= MOBILE_DEVICE_WIDTH;
+
+  return { width, isMobile };
 };
