@@ -73,4 +73,9 @@ export const ContactWrapper = styled.div`
   justify-content: center;
   margin-top: 40px;
   margin-bottom: 20px;
+
+  @media (max-width: 425px) {
+    flex-direction: column;
+    align-items: center;
+  }
 `;

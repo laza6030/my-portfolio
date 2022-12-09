@@ -4,6 +4,7 @@ import { Github } from "@styled-icons/boxicons-logos/Github";
 import { FacebookCircle } from "@styled-icons/boxicons-logos/FacebookCircle";
 import { LinkedinWithCircle } from "@styled-icons/entypo-social/LinkedinWithCircle";
 
+import { useGetWindowWidth } from "../../../hooks";
 import { Wrapper, StyledLink } from "./SocialMedia.styled";
 
 import VerticalLine from "./VerticalLine";
@@ -23,6 +24,8 @@ const SocialMedia = () => {
     },
   ];
 
+  const { isMobile } = useGetWindowWidth();
+
   return (
     <Wrapper>
       {socialMedia.map(({ name, link, icon }) => (
@@ -30,7 +33,7 @@ const SocialMedia = () => {
           {icon}
         </StyledLink>
       ))}
-      <VerticalLine />
+      {!isMobile && <VerticalLine />}
     </Wrapper>
   );
 };

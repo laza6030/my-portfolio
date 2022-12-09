@@ -11,9 +11,19 @@ export const Wrapper = styled.div`
   position: fixed;
   bottom: 0px;
   color: ${({ theme }) => theme.text.main};
+
+  @media (max-width: 425px) {
+    flex-direction: row;
+    position: relative;
+    height: auto;
+    width: 100%;
+    margin-left: 0;
+    justify-content: center;
+  }
 `;
 
 export const StyledLink = styled.a`
-  width: 100%;
+  width: 40px;
   color: ${({ theme }) => theme.text.main};
+  margin: 10px;
 `;
