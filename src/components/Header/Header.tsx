@@ -12,7 +12,8 @@ const Header = () => {
 
   const toggleShowMenu = () => setOpenMenu((openMenu) => !openMenu);
 
-  window.addEventListener("scroll", () => setOpenMenu(false));
+  if (typeof window !== "undefined")
+    window.addEventListener("scroll", () => setOpenMenu(false));
 
   return (
     <>
