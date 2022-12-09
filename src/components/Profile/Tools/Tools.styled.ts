@@ -17,8 +17,7 @@ export const IconWrapper = styled.div`
 
 export const Wrapper = styled.div`
   display: flex;
+  justify-content: space-between;
 `;
 
-export const ToolsWrapper = styled.div`
-  margin-right: 100px;
-`;
+export const ToolsWrapper = styled.div``;

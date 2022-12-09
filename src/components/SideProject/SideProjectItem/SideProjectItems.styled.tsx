@@ -5,11 +5,19 @@ export const MainWrapper = styled.div<{ isReverse: boolean }>`
   flex-direction: ${({ isReverse }) => (isReverse ? "row-reverse" : "row")};
   margin-top: 30px;
   margin-bottom: 100px;
+
+  @media (max-width: 1024px) {
+    flex-direction: column;
+  }
 `;
 
 export const Section = styled.div`
   margin: 10px;
   width: 50%;
+
+  @media (max-width: 1024px) {
+    width: 100%;
+  }
 `;
 
 export const Name = styled.h2`
