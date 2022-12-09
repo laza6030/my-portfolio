@@ -44,6 +44,10 @@ export const TitleWrapper = styled.div`
   justify-content: center;
   color: ${({ theme }) => theme.text.white};
   font-family: Nunito;
+
+  @media (max-width: 425px) {
+    width: 100%;
+  }
 `;
 
 export const StyledImage = styled.div`

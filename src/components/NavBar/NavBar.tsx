@@ -12,8 +12,7 @@ const NavBar = () => {
 
   const items: { name: string; link: string }[] = [
     { name: intl.formatMessage({ id: "about.me" }), link: "#about" },
-    { name: intl.formatMessage({ id: "my.career" }), link: "#career" },
-    { name: intl.formatMessage({ id: "my.skills" }), link: "#skills" },
+    { name: intl.formatMessage({ id: "my.projects" }), link: "#projects" },
     { name: intl.formatMessage({ id: "contact.me" }), link: "#contact" },
   ];
 

@@ -1,6 +1,7 @@
 import styled from "styled-components";
 
 export const Tool = styled.div`
+  width: max-content;
   font-family: Nunito;
   display: flex;
   align-items: center;
@@ -16,8 +17,7 @@ export const IconWrapper = styled.div`
 
 export const Wrapper = styled.div`
   display: flex;
+  justify-content: space-between;
 `;
 
-export const ToolsWrapper = styled.div`
-  margin-right: 100px;
-`;
+export const ToolsWrapper = styled.div``;

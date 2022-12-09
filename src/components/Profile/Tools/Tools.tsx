@@ -1,17 +1,16 @@
 import React from "react";
-
 import { FormattedMessage } from "gatsby-plugin-intl";
-import { Tux } from "@styled-icons/boxicons-logos/Tux";
-import { Visualstudiocode } from "@styled-icons/simple-icons/Visualstudiocode";
-import { Git } from "@styled-icons/boxicons-logos/Git";
-import { Terminal } from "@styled-icons/boxicons-regular/Terminal";
-import { Postman } from "@styled-icons/simple-icons/Postman";
-import { Trello } from "@styled-icons/boxicons-logos/Trello";
-import { Airtable } from "@styled-icons/simple-icons/Airtable";
 
-import { Paragraph } from "../../styled";
+import { Visualstudiocode } from "@styled-icons/simple-icons/Visualstudiocode";
+import { Terminal } from "@styled-icons/boxicons-regular/Terminal";
+import { Airtable } from "@styled-icons/simple-icons/Airtable";
+import { Trello } from "@styled-icons/boxicons-logos/Trello";
+import { Postman } from "@styled-icons/simple-icons/Postman";
+import { Tux } from "@styled-icons/boxicons-logos/Tux";
+import { Git } from "@styled-icons/boxicons-logos/Git";
 
 import { Tool, IconWrapper, ToolsWrapper, Wrapper } from "./Tools.styled";
+import { Paragraph } from "../../styled";
 
 const Tools = () => {
   const firstTools: { name: string; icon: React.ReactNode }[] = [
@@ -35,8 +34,8 @@ const Tools = () => {
 
       <Wrapper>
         <ToolsWrapper>
-          {firstTools.map((tool) => (
-            <Tool>
+          {firstTools.map((tool, index) => (
+            <Tool key={tool.name + index}>
               <IconWrapper>{tool.icon}</IconWrapper>
               {tool.name}
             </Tool>
@@ -44,8 +43,8 @@ const Tools = () => {
         </ToolsWrapper>
 
         <ToolsWrapper>
-          {secondTools.map((tool) => (
-            <Tool>
+          {secondTools.map((tool, index) => (
+            <Tool key={tool.name + index}>
               <IconWrapper>{tool.icon}</IconWrapper>
               {tool.name}
             </Tool>

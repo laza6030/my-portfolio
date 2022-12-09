@@ -41,8 +41,8 @@ const SideProjectItem = (props: IProps) => {
         </div>
         <Description>{description}</Description>
         <div style={{ display: "flex", flexWrap: "wrap" }}>
-          {technos.map((techno) => (
-            <Techno>{techno}</Techno>
+          {technos.map((techno, index) => (
+            <Techno key={index}>{techno}</Techno>
           ))}
         </div>
       </Section>
