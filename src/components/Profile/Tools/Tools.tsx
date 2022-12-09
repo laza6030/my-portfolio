@@ -34,8 +34,8 @@ const Tools = () => {
 
       <Wrapper>
         <ToolsWrapper>
-          {firstTools.map((tool) => (
-            <Tool>
+          {firstTools.map((tool, index) => (
+            <Tool key={tool.name + index}>
               <IconWrapper>{tool.icon}</IconWrapper>
               {tool.name}
             </Tool>
@@ -43,8 +43,8 @@ const Tools = () => {
         </ToolsWrapper>
 
         <ToolsWrapper>
-          {secondTools.map((tool) => (
-            <Tool>
+          {secondTools.map((tool, index) => (
+            <Tool key={tool.name + index}>
               <IconWrapper>{tool.icon}</IconWrapper>
               {tool.name}
             </Tool>

@@ -54,6 +54,7 @@ const SideProject = () => {
       {sideProjectList.map(
         ({ name, description, technos, screenShot, githubLink }, index) => (
           <SideProjectItem
+            key={index}
             {...{ name, description, technos, screenShot, githubLink }}
             isReverse={index % 2 === 1}
           />
