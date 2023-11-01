@@ -5,7 +5,7 @@ export const StyledNavBar = styled.div<{ colorChange: boolean }>`
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 50px;
+  height: 75px;
   margin-bottom: 30px;
   padding-right: 40px;
   position: fixed;

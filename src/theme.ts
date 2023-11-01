@@ -1,4 +1,8 @@
+import { SPACING_UNIT } from "./constants";
+
 const theme = {
+  spacing: (times: number) => SPACING_UNIT * times,
+
   background: {
     main: "#32395c",
     dark: "#28262e",

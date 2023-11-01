@@ -2,6 +2,8 @@ import "styled-components";
 
 declare module "styled-components" {
   export interface DefaultTheme {
+    spacing: (times: number) => number;
+
     background: {
       main: string;
       dark: string;
