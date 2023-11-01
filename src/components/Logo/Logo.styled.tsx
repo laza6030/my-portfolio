@@ -16,7 +16,7 @@ export const StyledLink = styled(Link)`
   text-decoration: none;
   background: unset;
   font-family: Ubuntu;
-  margin: 0 auto 0 15px;
+  margin: 0 auto 0 ${({ theme }) => theme.spacing(2)}px;
   color: ${({ theme }) => theme.text.main};
   border: 1px solid ${({ theme }) => theme.text.main};
   padding: 5px 20px;
